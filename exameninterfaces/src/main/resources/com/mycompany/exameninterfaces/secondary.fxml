@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<BorderPane prefHeight="620.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.exameninterfaces.SecondaryController">
+   <center>
+      <GridPane prefHeight="420.0" prefWidth="187.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="sexo" GridPane.rowIndex="1" />
+            <Label text="edad" GridPane.rowIndex="2" />
+            <Label text="peso" GridPane.rowIndex="3" />
+            <Label text="altura " GridPane.rowIndex="4" />
+            <Label text="nombre" />
+            <Label text="actividad" GridPane.rowIndex="5" />
+            <ChoiceBox fx:id="lsexo" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ChoiceBox fx:id="lactividad" prefHeight="26.0" prefWidth="114.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="lnombre" GridPane.columnIndex="1" />
+            <Spinner fx:id="ledad" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Spinner fx:id="lpeso" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Spinner fx:id="laltura" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="10.0" right="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <FlowPane alignment="TOP_CENTER" prefHeight="58.0" prefWidth="235.0">
+         <children>
+            <Button fx:id="Bañadirtabla" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="26.0" prefWidth="118.0" text="Añadir a la tabla" textAlignment="CENTER" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </FlowPane>
+   </bottom>
+   <top>
+      <Label text="formulario de registro" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
